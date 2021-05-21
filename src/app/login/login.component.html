@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="cntr"> <h1> LOGIN</h1> 
+          <div class="main">
+      
+            <form [formGroup]="loginform" (ngSubmit)="login()" >
+            <div class="mb-3">
+              
+              <input type="text" formControlName="uname"  name="accn" class="form-control round" id="acn" aria-describedby="emailHelp" placeholder="Account Number">
+              <!-- <div *ngIf="this.loginform.get('accn')?.touched&&this.loginform.get('accn')?.errors" class="form-text">invalid accoutnumber</div> -->
+            </div>
+            <div class="mb-3">
+              
+              <input type="password" formControlName="password" name="passw" class="form-control round" id="psw" placeholder="Password">
+              <!-- <div *ngIf="this.loginform.get('passw')?.touched&&this.loginform.get('passw')?.errors" class="form-text">invalid password</div> -->
+            </div>
+            
+            <div class="center-button">
+            <button type="submit " class="signup bg-primary round-button" >Submit</button>
+            </div>
+            <div class="signup">
+              <!-- <a routerLink="register" class="bg-primary signup round-button" >Create an Account</a> -->
+            </div>
+            <a routerLink="register">Register</a>
+            </form>
+            </div>
+        </div>
+        
+    </div>
+    
+    </div>

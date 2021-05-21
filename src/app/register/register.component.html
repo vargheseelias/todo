@@ -1,0 +1,32 @@
+<div class="container">
+
+       
+    <div class="cntr"><H1 style="color: black;">REGISTRATION</H1></div>
+     
+
+ <div class="main">
+ <form [formGroup]="registerform" (ngSubmit)="register()">
+   <div class="mb-3">
+     
+     <input type="text" formControlName="uname" class="form-control round" id="acn" aria-describedby="emailHelp" placeholder="Username">
+     <div *ngIf="this.registerform.get('uname')?.touched&&this.registerform.get('uname')?.errors" class="form-text erorr">Invalid Username</div>
+     
+     
+     <input type="password" formControlName="password" name="pssw"  class="form-control round" id="psw" placeholder="Password">
+     <div *ngIf="this.registerform.get('password')?.touched && this.registerform.get('password')?.errors" class="form-text erorr">Invalid password</div>
+   </div>
+   
+   <div class="center-button">
+     <button type="submit" class="btn btn-primary round-button"  >Submit</button>
+   </div>
+   <div class="signup">
+     <a routerLink="">Log in</a>
+   </div>
+   
+   
+ </form>
+ </div>
+</div>
+
+
+ 

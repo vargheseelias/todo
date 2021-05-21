@@ -1,0 +1,28 @@
+.todo{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    width: 500px;
+    min-height: 50vh;
+    position: relative;
+    align-items: center;
+    }
+    
+.tododetails{
+    display: flex;
+    margin-top: 20px;  
+    min-width: 300px;
+    border: 2px solid black;
+    justify-content: space-between;
+ }
+ 
+ .addtodo{
+    margin-top: 20px;
+    display: flex;
+ }
+ 
+  button{
+    height: 50px;
+    margin-left: 10px;
+ }
+ 

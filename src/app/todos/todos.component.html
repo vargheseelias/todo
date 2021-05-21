@@ -1,0 +1,26 @@
+<div class="todo">
+    <form >
+    <div class="addtodo">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="val" name="val" placeholder="Enter Todo here" #todo1>
+        </div>
+          <button type="button" class="btn btn-primary" (click)="add_data(this.uname,todo1.value)" >Submit</button>
+    </div>
+  </form>
+  
+    <div class="tododetails" *ngFor="let items of tododata;let i = index;">
+      <ul >
+        <li >
+          
+          {{items}}
+          
+        </li>
+      </ul>
+      <button class="btn btn-primary" (click)="delete_data(this.uname,items)">Delete</button>
+    </div>
+    <div class="p-3">
+      <button  class="btn btn-primary " (click)="delete_all()">Reset</button>
+    </div>
+    
+  </div>
+  
